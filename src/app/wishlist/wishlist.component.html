@@ -1,0 +1,29 @@
+<app-header-file></app-header-file>
+<div class="container">
+    <div style="padding-left: 90%; padding-top: 20px;"><button routerLink="/art-view" class="btn btn-warning" >Back</button></div>
+<div class="container-fluid" style="background-color: cornsilk;">
+    <div class="row">
+      <div class="col-md-3 col-sm-6" *ngFor="let item of arr">
+        <div class="product-grid">
+            <div class="product-image">
+                <a class="image">
+                    <img class="pic-1" routerLink="/art-detail/{{item.id}}"
+                    src="https://www.artic.edu/iiif/2/{{item.image_id}}/full/843,/0/default.jpg">
+                    <img class="pic-2" routerLink="/art-detail/{{item.id}}"
+                    src="https://www.artic.edu/iiif/2/{{item.image_id}}/full/843,/0/default.jpg">
+                </a>
+
+                <ul class="social">
+                    <li routerLink="/art-detail/{{item.id}}"><a  data-tip="Quick View"><fa-icon [icon]="faInfo" ></fa-icon></a></li>
+                    <li (click)="removeFromWishlist(item.id)"><a  data-tip="Add to wishlist"><fa-icon [icon]="faTimes" ></fa-icon></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title">{{item.title}}</h3>
+                <div class="price">{{item.artist_title}}</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>

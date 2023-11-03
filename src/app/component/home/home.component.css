@@ -1,0 +1,111 @@
+.main{
+    display: flex;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 45vw;
+    background-color:  rgb(238, 220, 209);
+}
+
+.right .text-box{
+    background-color: rgba(0,0,0,0);
+    color: rgb(188, 152, 130);
+    font-style: italic;
+    font-size: 1.4vw;
+    padding: 0vw 3vw 0vw 3vw;
+    line-height: 2vw;
+}
+
+.right button{
+    padding: 1.4vw 1vw;
+    font-size: 1vw;
+    border-radius: 0.4vw;
+    border: none;
+    background-color: rgb(142, 114, 96); 
+    transition: background-color 0.2s;
+}
+
+.right button:hover{
+    background-color: rgb(181, 153, 135);
+}
+
+.right button a{
+    text-decoration: none;
+    font-family: 'Gabarito';
+    font-weight: 800;
+    letter-spacing: 0.1vw;
+    color: rgb(241, 219, 205); 
+    transition: color 0.2s;
+
+}
+
+.right button:hover a{
+    color: rgb(105, 81, 66);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 45vw;
+    background-image: url(../../../assets/flat-design-geometric-mosaic-pattern_23-2149275969.avif);
+}
+
+.text-box{
+    background-color: rgb(218, 191, 174);
+    color: rgb(105, 81, 66);
+    font-size: 3vw;
+    padding: 8vw 3vw; 
+    line-height: 4vw;
+}
+
+.house {
+    color: rgb(176, 143, 123);
+    font-size: 2vw;
+}
+
+.invite{
+    margin-top: -2vw;
+    font-size: 1vw;
+}
+
+.discover{
+    font-size: 7vw;
+    color: rgb(208, 116, 59);;
+}
+
+.spirit{
+    font-size: 1.2vw;
+}
+
+.left button{
+    padding: 0 1vw;
+    font-size: 1vw;
+    border-radius: 0.4vw;
+    border: none;
+    background-color: rgb(241, 219, 205);
+    transition: background-color 0.2s;
+}
+
+.left button:hover{
+    background-color: rgb(142, 114, 96);
+}
+
+.left button:hover a{
+    color: rgb(241, 219, 205); 
+}
+
+.left button a{
+    letter-spacing: 0.1vw;
+    font-family: 'Gabarito';
+    font-weight: 800;
+    color: rgb(105, 81, 66);
+    text-decoration: none;
+    transition: color 0.2s;
+}

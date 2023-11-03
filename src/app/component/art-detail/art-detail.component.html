@@ -1,0 +1,31 @@
+<app-header-file></app-header-file>
+<!-- <nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="color: aquamarine;">Art Details</a>
+        <button routerLink="/" class="btn btn-warning">Back</button>
+    </div>
+</nav> -->
+<div class="container">
+    <div style="padding-left: 90%; padding-top: 20px;"><button routerLink="/art-view" class="btn btn-warning" >Back</button></div>
+    <div class="row art-detail">
+        <div class="col-sm-3">
+            <img class="product-img" src="https://www.artic.edu/iiif/2/{{artdata?.data[0].image_id}}/full/1200,800/0/default.jpg"> <hr/> 
+      
+            <div class="row">
+             <div class="col-sm-3"><button class="btn btn-primary" style="margin-left: 80px;" (click)="addtowishlist(artdata?.data[0].id)" *ngIf="showadd">Wishlist</button></div>
+              
+            </div>
+        </div>
+    
+
+    <div class="col-sm-8">
+        <div>
+            <h2 >{{artdata?.data[0].title}}</h2>
+            <p style="color:#000;">{{artdata?.data[0].artist_title}}</p>
+            <h3>{{artdata?.data[0].date_start}}</h3>
+            <strong>{{artdata?.data[0].category_titles}}</strong>
+            <div id="aaa" [innerHTML]="artdata?.data[0].description"></div>
+        </div>
+    </div>
+    </div>
+</div>

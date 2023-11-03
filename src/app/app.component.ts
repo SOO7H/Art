@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ArtChi';
+  title = 'Art-gallery';
+
+  ngOnInit(){
+    if(window.localStorage.getItem('fabs') == null){
+      window.localStorage.setItem('fabs',JSON.stringify([]));
+    }
+  }
 }
